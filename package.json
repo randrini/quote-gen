@@ -1,0 +1,22 @@
+{
+  "name": "quote-gen",
+  "version": "1.0.0",
+  "description": "Random quote generator",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch ./scss/main.scss ./css/styles.css "
+  },
+  "keywords": [
+    "sass",
+    "html",
+    "es6",
+    "js",
+    "api",
+    "rest"
+  ],
+  "author": "Richard Andrinirina",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
