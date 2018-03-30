@@ -1,3 +1,4 @@
+@import url("reset.css");
 *,
 *::before,
 *::after {
@@ -5,3 +6,70 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 400; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  color: #707070; }
+
+.box {
+  height: 470px;
+  width: 900px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.55); }
+  .box__quote {
+    width: 770px;
+    height: 250px;
+    margin-top: auto;
+    display: flex;
+    font: 55px 'Freestyle Script';
+    position: relative; }
+    .box__quote::before, .box__quote::after {
+      content: '"';
+      font-family: 'Imprint MT Shadow';
+      font-size: 120px; }
+    .box__quote::after {
+      position: absolute;
+      top: 60%;
+      left: 93%; }
+    .box__quote p {
+      justify-self: center;
+      align-self: center;
+      margin-left: auto;
+      margin-right: auto; }
+  .box__footer {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 90%;
+    margin: auto 20px 40px 20px; }
+  .box__quote-gen {
+    width: 210px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Imprint MT Shadow';
+    font-size: 30px;
+    cursor: pointer; }
+    .box__quote-gen:hover {
+      background-color: #eee;
+      color: #404040; }
+  .box__tweet {
+    margin: auto auto auto 20px; }
+    .box__tweet img {
+      height: 50px;
+      width: 50px; }
+  .box__cite {
+    margin: auto 10px auto auto;
+    font-family: 'Freestyle Script';
+    font-size: 45px; }
