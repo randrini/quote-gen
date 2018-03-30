@@ -2,9 +2,11 @@
   "name": "quote-gen",
   "version": "1.0.0",
   "description": "Random quote generator",
+  "homepage": "https://randrini.github.io/random-quote",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --watch ./scss/main.scss ./css/styles.css "
+    "sass": "node-sass --watch ./scss/main.scss ./css/styles.css ",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "sass",
@@ -17,6 +19,7 @@
   "author": "Richard Andrinirina",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "node-sass": "^4.8.3"
   }
 }

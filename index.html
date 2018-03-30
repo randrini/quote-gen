@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Random quote generator</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -13,7 +14,10 @@
 
   <figure class="box">
     <blockquote class="box__quote" cite="#">
-      <p>Only I can change my life. No one can do it for me.</p>
+
+      <p id="quote">
+        <span>"</span>
+        Only I can change my life. No one can do it for me.</p>
     </blockquote>
     <footer class="box__footer">
       <button class="box__quote-gen">New Quote</button>
@@ -24,6 +28,7 @@
     </footer>
   </figure>
 
+  <script src="index.js"></script>
 </body>
 
 </html>
