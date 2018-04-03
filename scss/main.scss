@@ -7,6 +7,10 @@
 	font-weight: 400;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	display: flex;
 	justify-content: center;
@@ -18,8 +22,8 @@ body {
 }
 
 .box {
-	height: 470px;
-	width: 900px;
+	height: 40vw;
+	width: 80%;
 	border: 1px solid blue;
 	display: flex;
 	flex-direction: column;
@@ -30,63 +34,50 @@ body {
 	box-shadow: 0 3px 6px rgba(000, 000, 000, 0.55);
 
 	&__quote {
-		width: 770px;
-		height: 250px;
 		// border: 1px solid blue;
 		margin-top: auto;
 		display: flex;
 		font: 55px 'Freestyle Script';
-		position: relative;
 
 		& span {
 			font-family: 'Imprint MT Shadow';
-			font-size: 120px;
+			font-size: 10vw;
 			margin-right: 1%;
 		}
 
-		// &::before,
-		// &::after {
-		// 	content: '"';
-		// 	font-family: 'Imprint MT Shadow';
-		// 	font-size: 120px;
-		// }
-
-		// &::after {
-		// 	position: absolute;
-		// 	top: 60%;
-		// 	left: 93%;
-		// }
-
 		& p {
-			justify-self: center;
 			align-self: center;
-			margin-left: auto;
-			margin-right: auto;
-			font-size: 4vw;
+			padding: 5% 5% 5% 5%;
+			font-size: 5vw;
+			transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+			animation: fadein 2s;
+			box-sizing: border-box;
+			// border: 1px solid red;
 		}
 	}
 
 	&__footer {
 		display: flex;
 		flex-direction: row;
-		height: 70px;
+		height: 5em;
 		width: 90%;
 		// border: 1px solid red;
-		margin: auto 20px 40px 20px;
+		margin: auto 2% 4% 2%;
 	}
 
 	&__quote-gen {
-		width: 210px;
-		height: 70px;
+		width: 15vw;
 		border-radius: 10px;
 		border: none;
 		font-family: 'Imprint MT Shadow';
-		font-size: 30px;
+		font-size: 2vw;
 		cursor: pointer;
+		outline: none;
 
 		&:hover {
 			background-color: #eee;
 			color: #404040;
+			transition: all ease-in-out 0.3s;
 		}
 	}
 
@@ -94,14 +85,19 @@ body {
 		margin: auto auto auto 20px;
 
 		& img {
-			height: 50px;
-			width: 50px;
+			height: 30px;
+			width: 30px;
 		}
 	}
 
 	&__cite {
-		margin: auto 10px auto auto;
+		margin: auto 1% auto auto;
 		font-family: 'Freestyle Script';
-		font-size: 45px;
+		font-size: 4vw;
 	}
+}
+
+.fade {
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation: fade-in 2s;
 }
