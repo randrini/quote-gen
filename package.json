@@ -1,6 +1,6 @@
 {
   "name": "quote-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Random quote generator",
   "homepage": "https://randrini.github.io/random-quote",
   "main": "index.js",
